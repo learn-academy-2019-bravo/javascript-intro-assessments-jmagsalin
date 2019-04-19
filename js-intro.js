@@ -65,7 +65,24 @@
 var message = "thisisateststring"
 
 // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+// function noVowels(words){
+//   var newArr = []
+//   var letters = words.split("")
+//   for (let i = 0; i < letters.length; i++) {
+//     if (letters[i] !== "a" && letters[i] !== "e" && letters[i] !== "i" && letters[i] !== "o" && letters[i] !== "u") {
+//       newArr.push(letters[i])
+//     }var sentence = newArr.join("")
+//
+//     }return sentence
+//   }
+//
+//   console.log(noVowels(message));
+
+var message1 = 23
+// Stretch: Update your function to throw an exception if the argument is not a string.
 function noVowels(words){
+  if (words !== "string"){
+return ("error")}
   var newArr = []
   var letters = words.split("")
   for (let i = 0; i < letters.length; i++) {
@@ -74,18 +91,22 @@ function noVowels(words){
     }var sentence = newArr.join("")
 
     }return sentence
-  }
+
+}
+
 
   console.log(noVowels(message));
-
-
-
-// Stretch: Update your function to throw an exception if the argument is not a string.
-
 // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
 
 // Consider the following variable:
 //
-// var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
+var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
 
 // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+class Animals{
+  (cart1, cart2, cart3, cart4) {
+  this.toonimalsArr[cart1, cart2, cart3, cart4]
+
+}
+var newArr = []
+for (let i=0; toonimalsArr.length; i++)
