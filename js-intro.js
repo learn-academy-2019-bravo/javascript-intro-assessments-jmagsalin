@@ -49,17 +49,33 @@
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
 // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
-// var mantra = "Be the dev"
+var mantra = "Be the dev"
+
 // for (let i=0; i < mantra.length; i++)  {
-// //   console.log(mantra[i]);
+//   console.log(mantra[i]);
 // }
 // // Stretch: Using a while loop.
-// var mantra = "Be the dev"
-// var i = 0
-// var text = ""
-// while (mantra[i]){text += mantra[i] + "<br>"; i++}
-//   console.log(mantra[i]);
+// while (mantra.includes("v") !== true) {
+//   console.log(mantra);mantra++
+// }
+// var i = mantra.length;
+// while (i--) {
+//   console.log(mantra.charAt(i))}
 // Super Stretch: Using forEach().
+var mantraArray = mantra.split("")
+
+var newMantra = []
+mantraArray.forEach(function(element){
+  newMantra.push(element)
+})
+console.log(newMantra);
+// var array1 = ['a', 'b', 'c'];
+//
+// array1.forEach(function(element) {
+//   console.log(element)
+// })
+// // Write your code below
+
 
 // Consider the following variable:
 
@@ -101,9 +117,9 @@
 
 // Consider the following variable:
 //
-var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
-
-// 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
-for (let cats in toonimals.name) {
-  console.log(`${cats} : ${toonimals[cats].animal}`)
-}
+// var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
+//
+// // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+// for (let cats in toonimals.name) {
+//   console.log(`${cats} : ${toonimals[cats].animal}`)
+// }
