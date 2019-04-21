@@ -19,7 +19,8 @@
 // } else {console.log("mantra does not include v");
 // }
 // // Stretch: Write the code that returns the position of 'v' in mantra.
-
+// var onlyv = mantra.indexOf("v")
+// console.log(onlyv)
 
 // Consider the following statement:
 
@@ -62,7 +63,7 @@
 
 // Consider the following variable:
 
-var message = "thisisateststring"
+// var message = "thisisateststring"
 
 // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
 // function noVowels(words){
@@ -78,24 +79,24 @@ var message = "thisisateststring"
 //
 //   console.log(noVowels(message));
 
-var message1 = 23
-// Stretch: Update your function to throw an exception if the argument is not a string.
-function noVowels(words){
-  if (words !== "string"){
-return ("error")}
-  var newArr = []
-  var letters = words.split("")
-  for (let i = 0; i < letters.length; i++) {
-    if (letters[i] !== "a" && letters[i] !== "e" && letters[i] !== "i" && letters[i] !== "o" && letters[i] !== "u") {
-      newArr.push(letters[i])
-    }var sentence = newArr.join("")
-
-    }return sentence
-
-}
-
-
-  console.log(noVowels(message));
+// var message1 = 23
+// // Stretch: Update your function to throw an exception if the argument is not a string.
+// function noVowels(words){
+//   if (words !== "string"){
+// return ("error")}
+//   var newArr = []
+//   var letters = words.split("")
+//   for (let i = 0; i < letters.length; i++) {
+//     if (letters[i] !== "a" && letters[i] !== "e" && letters[i] !== "i" && letters[i] !== "o" && letters[i] !== "u") {
+//       newArr.push(letters[i])
+//     }var sentence = newArr.join("")
+//
+//     }return sentence
+//
+// }
+//
+//
+//   console.log(noVowels(message));
 // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
 
 // Consider the following variable:
@@ -103,10 +104,6 @@ return ("error")}
 var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
 
 // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
-class Animals{
-  (cart1, cart2, cart3, cart4) {
-  this.toonimalsArr[cart1, cart2, cart3, cart4]
-
+for (let cats in toonimals.name) {
+  console.log(`${cats} : ${toonimals[cats].animal}`)
 }
-var newArr = []
-for (let i=0; toonimalsArr.length; i++)
