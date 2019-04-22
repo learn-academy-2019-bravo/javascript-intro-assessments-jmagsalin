@@ -49,7 +49,7 @@
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
 // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
-var mantra = "Be the dev"
+// var mantra = "Be the dev"
 
 // for (let i=0; i < mantra.length; i++)  {
 //   console.log(mantra[i]);
@@ -62,20 +62,16 @@ var mantra = "Be the dev"
 // while (i--) {
 //   console.log(mantra.charAt(i))}
 // Super Stretch: Using forEach().
-var mantraArray = mantra.split("")
 
-var newMantra = []
-mantraArray.forEach(function(element){
-  newMantra.push(element)
-})
-console.log(newMantra);
-// var array1 = ['a', 'b', 'c'];
-//
-// array1.forEach(function(element) {
-//   console.log(element)
-// })
+
 // // Write your code below
-
+// var mantraArray = mantra.split("")
+//
+// var newMantra = []
+// mantraArray.forEach(function(element){
+//   newMantra.push(element)
+// })
+// console.log(newMantra);
 
 // Consider the following variable:
 
@@ -109,17 +105,21 @@ console.log(newMantra);
 //
 //     }return sentence
 //
-// }
-//
+// 
 //
 //   console.log(noVowels(message));
 // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
 
 // Consider the following variable:
 //
-// var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
-//
+var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
+let catsOnly = toonimals.filter(function(obj){
+  return obj.animal === "cat"
+})
+console.log(catsOnly);
 // // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
-// for (let cats in toonimals.name) {
-//   console.log(`${cats} : ${toonimals[cats].animal}`)
+
+// for (let catsOnly in toonimals[0]) {if (catsOnly = "cat")
+// {console.log(`${toonimals[0][catsOnly]}`);
+// }
 // }
