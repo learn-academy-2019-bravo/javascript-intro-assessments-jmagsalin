@@ -78,38 +78,41 @@
 var message = "thisisateststring"
 
 // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
-// function noVowels(words){
-//   var newArr = []
-//   var letters = words.split("")
-//   for (let i = 0; i < letters.length; i++) {
-//     if (letters[i] !== "a" && letters[i] !== "e" && letters[i] !== "i" && letters[i] !== "o" && letters[i] !== "u") {
-//       newArr.push(letters[i])
-//     }var sentence = newArr.join("")
-//
-//     }return sentence
-//   }
-// //
-//   console.log(noVowels(message))
-//
-
-// // // Stretch: Update your function to throw an exception if the argument is not a string.
 function noVowels(words){
-
   var newArr = []
   var letters = words.split("")
-
   for (let i = 0; i < letters.length; i++) {
     if (letters[i] !== "a" && letters[i] !== "e" && letters[i] !== "i" && letters[i] !== "o" && letters[i] !== "u") {
       newArr.push(letters[i])
     }var sentence = newArr.join("")
-} return sentence
-}
 
-// } elseif (typeOf (letters[i]) !== "string"){
-//   return words
+    }return sentence
+  }
+//
+  console.log(noVowels(message))
+
+// var message1 = "joel"
+// // // // Stretch: Update your function to throw an exception if the argument is not a string.
+// function noVowels(words){
+//
+//   var newArr = []
+//   var letters = words.split("")
+//
+//   if (typeOf (words) !== "string"){
+//     return "Error need a string"
+//   } else {
+//   for (let i = 0; i < letters.length; i++) {
+//     if (letters[i] !== "a" && letters[i] !== "e" && letters[i] !== "i" && letters[i] !== "o" && letters[i] !== "u") {
+//       newArr.push(letters[i])
+//     }var sentence = newArr.join("")
+// } return sentence
 // }
 // }
-console.log(noVowels(message));
+// // } else{
+// //   return (words)
+// // }
+// // }
+// console.log(noVowels(message1));
 // if (typeOf (sentence) === "string"){
 //   return sentence}
 //   else if (typeOf (sentence) !== "string"){
@@ -134,15 +137,33 @@ console.log(noVowels(message));
 //   return "error"
 // console.log(onlyLetters(message1))
 // Consider the following variable:
-//
+
 // var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
 // let catsOnly = toonimals.filter(function(obj){
 //   return obj.animal === "cat"
 // })
 // console.log(catsOnly);
+//
+// var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
+//
+// cats = (arr) => {
+//  let catsOnly = arr.filter(function(value){
+//   return value.animal === "cat"
+// })
+// return catsOnly
+// }
+// console.log(cats(toonimals));
 // // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
 
 // for (let catsOnly in toonimals[0]) {if (catsOnly = "cat")
 // {console.log(`${toonimals[0][catsOnly]}`);
 // }
 // }
+const message = "Javascript is awesome"
+const onlyConsonants = (string, array) =>{
+var vowels = ["a", "e", "i", "o", "u"]
+let allLetters = string.split("")
+let nowVowels = allLetters.filter(value => !array.includes(value))
+return newWord = nowVowels.join("")
+}
+console.log(onlyConsonants(message));
